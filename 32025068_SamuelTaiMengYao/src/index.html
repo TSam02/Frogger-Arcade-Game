@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>FIT2102 A1 2022</title>
+  </head>
+  <body>
+    <h1>Frogger</h1>
+    <svg width="600" height="600">
+      <g id ="backgroundLayer">
+        <rect id="river 0" width="600" height="189" x="0" y="120" fill= "skyblue" />
+        <rect id="timer box" width="80" height="80" x="1" y ="1" fill="lavender" />
+        <text id="timer" x="10" y="25" font-family="Algerian" font-size="20" fill="brown">Timer:</text>
+        <text id="time" x="20" y="60" font-family="Algerian" font-size="25" fill="brown"></text>
+      </g>
+      <g id ="middleLayer">
+      </g>
+      <g id="foregroundLayer">
+      <image
+          id="frog"
+          width="35"
+          height="40"
+          href="https://i.imgur.com/GFWbTcJ.png"
+          transform="translate(0, 0)"
+        />
+      </g>
+    </svg>
+    <div id="panel">
+      <h3> Level:</h3> 
+      <g id="level"> 
+        <script>document.getElementById("level").innerHTML = 1</script> 
+      </g>
+
+      <h3> Score:</h3> 
+      <g id="score"> 
+        <script>document.getElementById("score").innerHTML = 0</script> 
+      </g>
+
+      <h3>HighScore:</h3>
+      <g id="highScore">
+        <script>document.getElementById("highScore").innerHTML = 0</script> 
+      </g>
+
+      <h3>Lives &#9829;:</h3>
+      <g id="lives">
+        <script>document.getElementById("lives").innerHTML = 5</script> 
+      </g>
+
+      <div id="controls">
+        <h3>Controls:</h3>
+        <table>
+          <tr><td>Jump Front</td><td><div id="KeyW" class="key">&#87;</div></td></tr>
+          <tr><td>Jump Left</td><td><div id="KeyA" class="key">&#65;</div></td></tr>
+          <tr><td>Jump Back</td><td><div id="KeyS" class="key">&#83;</div></td></tr>
+          <tr><td>Jump Right</td><td><div id="KeyD" class="key">&#68;</div></td></tr>
+          <tr><td>In-Game Restart</td><td><div id="KeyR" class="key">&#82;</div></td></tr>
+        </table>
+      </div>
+    </div>
+    <div id="instructionPanel">
+    <h3> Instruction:</h3> 
+      <p>
+        &#127918; Refresh the page to randomise the speed and direction <br>
+        &#129505; 5 lives for each round (maintain level but lost points if died) <br>
+        &#9203;   150 seconds for each level (lost 1 life if fail to level up)
+        &#128665; Avoid all the vehicles  <br>
+        &#127754; Ground is safe but river is dangerous<br>
+        &#128056; The frog can stand on the planks <br>
+        &#129439; Eat flies and boost the points by 100 (hit target) <br>
+        &#127919; Target Area: 10 points each <br>
+        &#128010; Crocodile body is safe but not the head <br>
+        &#128128; (Hit all targets) Level up will increase the speed of obstacles <br>
+        &#127939; In-Game restart: maintain level but lost the current points <br>
+
+         </p>
+    </div>
+  </body>
+</html>
